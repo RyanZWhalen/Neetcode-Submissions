@@ -1,0 +1,8 @@
+class Solution2:
+    def twoSum2(self, nums: List[int], target: int) -> List[int]:
+        for i in range(len(nums)):
+            for j in range(i + 1, len(nums)):
+                if i + j == target:
+                    return [i, j]
+        
+        return FALSE
